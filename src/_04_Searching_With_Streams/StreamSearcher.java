@@ -13,9 +13,8 @@ public class StreamSearcher {
 		Stream<String> sStrArr = Stream.of(strArr);
 		//3. Use the filter method with a lambda to extract all the String
 		//   elements that match the String parameter.
-		
+		sStrArr = sStrArr.filter((s) -> s.equals(strToCount));
 		//4. Return the count of the filtered stream.
-		
-		return 0;
+		return sStrArr.count();
 	}
 }
